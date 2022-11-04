@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minWidth="430.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CountdownController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="textFieldDatumInput" prefWidth="130.0" promptText="0000. 00. 00. 00:00:00">
+                    <HBox.margin>
+                        <Insets left="10.0" right="30.0" top="20.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#Visszaszamlal" prefWidth="50.0" text="Indit">
+                    <HBox.margin>
+                        <Insets top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0">
+            <children>
+                <Label fx:id="labelVisszaszamlalo" minWidth="350.0">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>
